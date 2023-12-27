@@ -1,0 +1,4 @@
+thirdweb-app/node_modules
+thirdweb-contracts/node_modules
+thirdweb-contracts/cache-zk
+thirdweb-contracts/artifacts-zk
