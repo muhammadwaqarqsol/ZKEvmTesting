@@ -6,12 +6,27 @@ import "../styles/globals.css";
 // This is the chain your dApp will work on.
 // Change this to the chain your app is built for.
 // You can also import additional chains from `@thirdweb-dev/chains` and pass them directly.
-const activeChain = "ethereum";
-const Divernom: Chain = {
-  id: 378980472,
-  name: "Divervenom",
-  rpcUrls: ["https://divervenom-rpc.eu-north-2.gateway.fm"],
-  
+
+const activeChain = {
+  chainId: 378980472,
+  rpc: ["https://divervenom-rpc.eu-north-2.gateway.fm"],
+  shortName: "divervenom",
+  slug: "divervenom",
+  chain: "divervenom",
+  name: "divervenom",
+  testnet: true,
+  explorers: [
+    {
+      name: "blockscout",
+      url: "https://divervenom-blockscout.eu-north-2.gateway.fm",
+      standard: "EIP3091",
+    },
+  ],
+  nativeCurrency: {
+    name: "Ether",
+    symbol: "ETH",
+    decimals: 18,
+  },
 };
 
 function MyApp({ Component, pageProps }: AppProps) {
